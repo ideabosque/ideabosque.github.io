@@ -31,8 +31,8 @@ Product image data is aggregated into the middle tier from the source image data
 * Dropship Vendor: who provides the dropship service for the seller.
 
 ### System
-* Seller e-commerce(frontend): Magento 2
-* Dropship Vendor(Back Office): NetSuite
+* Seller e-commerce(Frontend): Magento 2
+* Dropship Vendor(Backdffice): NetSuite
 * Middle Tier: DataWald Integration platform
     - Middle Tier API (DataWald API)
         1. Core: Manage the configuration of each connection path and matedata of product data.
