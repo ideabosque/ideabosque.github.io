@@ -2,10 +2,6 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 {% include head.html %}
 <body class="site{% if site.animated %} animated fade-in-down{% endif %}">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VRF8G"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
   {% if site.google_tag_manager %}
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -32,6 +28,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   {% include footer.html %}
-  {% include analytics.html %}
 </body>
 </html>
