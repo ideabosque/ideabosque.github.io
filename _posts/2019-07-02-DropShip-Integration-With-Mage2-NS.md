@@ -3,7 +3,7 @@ layout: post
 title: DropShip Integration Architecture
 date: 2019-07-02 16:17
 summary: DropShip integration built with NetSuite and Magento 2.
-categories: NetSuite SuiteTalk, Magento 2
+categories: NetSuite SuiteTalk Magento 2
 ---
 
 The dropship integration system addresses the requirements and workflows between the seller and the dropship vendor.
