@@ -3,7 +3,7 @@ layout: post
 title: Tasks Management for Asynchronous Processes 
 date: 2019-08-21 12:30
 summary: Tasks Management for Asynchronous Processes.
-categories: BigCommerce Shopify serverless
+categories: BigCommerce Shopify Serverless
 ---
 This component is built to manage and process asynchronous processes such as data adding/refreshing.
 ![Architecture](/images/2019-09-10_12-35-28.png)
