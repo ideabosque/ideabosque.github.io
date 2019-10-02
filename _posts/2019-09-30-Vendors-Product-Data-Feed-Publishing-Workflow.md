@@ -2,18 +2,18 @@
 layout: post
 title: Vendors Product Data Feed Publishing Process
 date: 2019-09-30 16:02
-summary: Vendors Product Data Feed Publishing Process(Trading Product Data Service).
+summary: Vendors Product Data Feed Publishing Process(Trading Product Data Service, Universal Product Data Feed).
 categories: NetSuite Magento2
 ---
 
 The scenario is related to the product data published or updated workflow from vendors to ERP(NetSuite), and from ERP(NetSuite) to e-commerce(Magento 2).
-* 1st Stage: Data Collection from The Data Feed from Vendors.  
+* 1st Stage: Data Collection from from Vendors' Data Feed.  
 * 2nd Stage: Data Transformation to ERP(NetSuite) and Manipulated by CSR. 
 * 3rd Stage: Data Transformation and Publishing to Universal Product Data Feed.
 * Final Stage: E-Commerce(Magento 2) Pickup Data from Universal Product Data Feed.  
 ![Stages](/images/2019-10-02_13-51-03.png)
 
-### 1st Stage: Data Collection from The Data Feed from Vendors.
+### 1st Stage: Data Collection from Vendors' Data Feed.
 First, vendors either expose the data feed with public links or place the data with certain format such as CSV, JSON or XML to the dedicated AWS S3 buckets.  Next, a scheduled task will scan and pull the data into the staging table, "stg_products"(AWS DynamoDB). 
 ![1st Stage](/images/2019-10-02_13-51-24.png)
 
