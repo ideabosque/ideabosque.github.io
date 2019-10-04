@@ -7,7 +7,7 @@ categories: NetSuite Magento2
 ---
 
 The scenario is related to the product data published or updated workflow from vendors to ERP(NetSuite), and from ERP(NetSuite) to e-commerce(Magento 2).
-* 1st Stage: Data Collection from from Vendors' Data Feed.  
+* 1st Stage: Data Collection from Vendors' Data Feed.  
 * 2nd Stage: Data Transformation to ERP(NetSuite) and Manipulated by CSR. 
 * 3rd Stage: Data Transformation and Publishing to Universal Product Data Feed.
 * Final Stage: E-Commerce(Magento 2) Pickup Data from Universal Product Data Feed.  
@@ -44,7 +44,7 @@ Periodically, the middle tier(DataWald) retrieves the data from the staging tabl
 
 After the data is placed in ERP(NetSuite), a CSR can work on the data with the addtional information for the next stage.  Within this stage, certain fields of data will be published only once when the entity is inserted; otherwise, the rest of fields can be updated by the source of the data feeds from the vendors.
 
-### 3rd Stage: 3rd Stage: Data Transformation and Publishing to Univeral Product Data Feed.
+### 3rd Stage: 3rd Stage: Data Transformation and Publishing to Universal Product Data Feed.
 The middle tier(DataWald) will pickup the updated records by the cut time in the sync control layer.  Then, the data will be processed with the validation and transformation rules in the metadata management layer.  If any record with an exception or failed in the process will be marked as "F" and can be resynchronized from the middle tier(DataWald) with the proper correction; otherwise, it will be synchronized to the target table, "universal_products"(AWS DynamoDB) for the universal product data feed.
 
 ![3rd Stage](/images/2019-10-02_13-52-29.png)
