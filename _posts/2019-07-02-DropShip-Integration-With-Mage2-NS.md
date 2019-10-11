@@ -41,9 +41,11 @@ New placed orders will be scaned by a scheduled job in E-Commerce(Magento 2).  I
 ![Orders Sync Workflow Step 2](/images/2019-10-10_23-01-28.png)
 
 ### User Case: Product data/inventory synchronization
-Scheduled **BackOffice Task** will retrieve product data and inventory by the cut time managed by sync control layer and push to the tables "universal_products" and "universal_products-inventory"(AWS DynamoDB) through the middle tier(DataWald).  Then, a scheduled job in E-Commerce(Magento 2) will fetch the data from the universal product data/inventory feed(RESTful API) with the interval timeslot.
+Scheduled **BackOffice Task** will retrieve product data and inventory by the cut time managed by sync control layer and push to the tables "universal_products" and "universal_products-inventory"(AWS DynamoDB) through the middle tier(DataWald).
 
 ![Product Data/Inventory Sync Workflow Step 1](/images/2019-10-10_23-19-39.png)
+
+Then, a scheduled job in E-Commerce(Magento 2) will fetch the data from the universal product data/inventory feed(RESTful API) with the interval timeslot.
 
 ![Product Data/Inventory Sync Workflow Step 2](/images/2019-10-10_23-20-41.png)
 
