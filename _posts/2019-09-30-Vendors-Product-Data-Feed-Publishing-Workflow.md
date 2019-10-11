@@ -6,7 +6,7 @@ summary: Vendors Product Data Feed Publishing Process(Trading Product Data Servi
 categories: NetSuite Magento2
 ---
 
-The scenario is related to the product data published or updated workflow from vendors to ERP(NetSuite), and from ERP(NetSuite) to e-commerce(Magento 2).
+The scenario is related to the product data published or updated workflow from vendors to ERP(NetSuite), and from ERP(NetSuite) to E-Commerce(Magento 2).
 * 1st Stage: Data Collection from Vendors' Data Feed.  
 * 2nd Stage: Data Transformation to ERP(NetSuite) and Manipulated by CSR. 
 * 3rd Stage: Data Transformation and Publishing to Universal Product Data Feed.
@@ -70,6 +70,6 @@ The middle tier(DataWald) will pickup the updated records by the cut time in the
 6. Update the status for a task in the sync control layer.
 
 ### Final Stage: E-Commerce(Magento 2) Pickup Data from Universal Product Data Feed.
-Eventially, a scheduled job in the e-commerce(Magento 2) will fetch the data from the universal product data feed(RESTful API) with the interval timeslot and put the products online.
+Eventially, a scheduled job in the E-Commerce(Magento 2) will fetch the data from the universal product data feed(RESTful API) with the interval timeslot and put the products online.
 
 ![Final Stage](/images/2019-10-02_13-52-47.png)
