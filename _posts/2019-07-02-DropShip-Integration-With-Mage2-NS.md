@@ -40,14 +40,55 @@ New placed orders will be scaned by a scheduled job in E-Commerce(Magento 2).  I
 
 ![Orders Sync Workflow Step 2](/images/2019-10-10_23-01-28.png)
 
+**Step 1** Orders scanned and processed with queues(AWS SQS).
+1. Scan orders. Then, request a AWS SQS queue, place orders to the AWS SQS queue and send the AWS SQS queue.
+2. Invoke **Core Task**.
+
+**Step 2** Orders collection from the queues.
+1. Invoke **MicroCore SQS Task**.
+2. Retrieve data from the queue.
+3. Push data to **DataWald API**.
+
+**Step 3** Dispatch **BackOffice Task** with AWS SQS.
+1. Place data to a AWS SQS queue.
+2. Dispatch **BackOffice Task**.
+
+**Step 4** Data synchronization to ERP(NetSuite) by **BackOffice Task**.
+1. Retrieve data from the AWS SQS queue.
+2. Invoke **Core Task**.
+3. Invoke **MicroCore NS Task**.
+4. Synchronize data to ERP(NetSuite).
+5. Update the status for each entity of the data.
+6. Update the status for a task in the sync control layer.
+
 ### User Case: Product data/inventory synchronization
 Scheduled **BackOffice Task** will retrieve product data and inventory by the cut time managed by sync control layer and push to the tables "universal_products" and "universal_products-inventory"(AWS DynamoDB) through the middle tier(DataWald).
 
 ![Product Data/Inventory Sync Workflow Step 1](/images/2019-10-10_23-19-39.png)
 
-Then, a scheduled job in E-Commerce(Magento 2) will fetch the data from the universal product data/inventory feed(RESTful API) with the interval timeslot.
+**Step 1** Schedule **BackOffice Task** powered by AWS CloudWatch.
+
+**Step 2** Data collection from ERP(NetSuite).
+1. Invoke **Core Task**.
+2. Invoke **MicroCore NS Task**.
+3. Collect data from ERP(NetSuite).
+4. Push data to **DataWald API**.  
+
+**Step 3** Dispatch **Frontend Task** with AWS SQS.
+1. Place data to a AWS SQS queue.
+2. Dispatch **Frontend Task**.
+
+**Step 4** Data synchronization to the table **universal_products** or **universal_products-inventory** by **Frontend Task**.
+1. Retrieve data from the AWS SQS queue.
+2. Invoke **Core Task**.
+3. Invoke **MicroCore DynamoDB Task**.
+4. Synchronize data to the table **universal_products** or **universal_products-inventory**.
+5. Update the status for each entity of the data.
+6. Update the status for a task in the sync control layer.
 
 ![Product Data/Inventory Sync Workflow Step 2](/images/2019-10-10_23-20-41.png)
+
+Then, a scheduled job in E-Commerce(Magento 2) will fetch the data from the universal product data/inventory feed(RESTful API) with the interval timeslot.
 
 ### User Case: Image synchronization
 There are two types of image sources.
@@ -60,7 +101,26 @@ There are two types of image sources.
 
 ![Product Images Sync Workflow](/images/2019-10-10_23-24-25.png)
 
-Eventially, a scheduled job at the seller's E-Commerce(Magento 2) will fetch the image data from the universal image gallery feed(RESTful) with a interval timeslot.
+**Step 1** Schedule **BackOffice Task** powered by AWS CloudWatch.
+
+**Step 2** Data collection from E-Commerce(Magento 2).
+1. Invoke **Core Task**.
+2. Invoke **MicroCore Mage2 Task**.
+3. Collect data from E-Commerce(Magento 2).
+4. Push data to **DataWald API**.  
+
+**Step 3** Dispatch **Frontend Task** with AWS SQS.
+1. Place data to a AWS SQS queue.
+2. Dispatch **Frontend Task**.
+
+**Step 4** Data synchronization to the table **universal_products-imagegallery** by **Frontend Task**.
+1. Retrieve data from the AWS SQS queue.
+2. Invoke **Core Task**.
+3. Invoke **MicroCore DynamoDB Task**.
+4. Synchronize data to the table **universal_products-imagegallery**.
+5. Update the status for each entity of the data.
+6. Update the status for a task in the sync control layer.
 
 ![Product Images Sync Workflow Final](/images/2019-10-10_23-24-37.png)
 
+Eventially, a scheduled job at the seller's E-Commerce(Magento 2) will fetch the image data from the universal image gallery feed(RESTful) with a interval timeslot.
