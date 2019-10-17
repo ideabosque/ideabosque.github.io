@@ -13,6 +13,9 @@ First, the workflow will be initiated which are issued by PO transactions in Net
 
 ### Receiving invoices (item fulfillments) from vendors:
 When each vendor processes a PO, a corresponding invoice (item fulfillment) file will be placed in the bucket.  A periodic task will scan each bucket(assigned to each vendor) and merge all invoices(item fulfillments) files into one if all related invoices(item fulfillments) of a sales order are sent back and then place the files in a dedicated bucket.  Next, another scheduled task will process the merged files from the bucket to a staging table in AWS DynamoDB.  In the meantime, the logic will check the records (a.k.a item fulfillments in the system) and update accordingly. That is, any new record or change on previous ones will be placed into a queue and the system will dispatch a task to process it properly.  Then, the records in the queue will be processed into NetSuite.  The last step is a task will be fired to inspect if each record is processed successfully or not and update the details of the status.  If any record is failed for any reason, the system will  resend the record after correcting the data in the staging table.
+
+![Receiving Invoices Workflow 0](/images/2019-08-19_23-02-52-0.png)
+
 ![Receiving Invoices Workflow](/images/2019-08-19_23-02-52.png)
 
 To automate the workflow of the purchase order is a matter of the efficiency of the business's operation among the purchase vendors.
