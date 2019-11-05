@@ -22,7 +22,7 @@ Periodically, the middle tier(DataWald) retrieves the data from the staging tabl
 
 ![2nd Stage](/images/2019-10-02_13-52-03.png)
 
-**Step 1** Schedule **Frontend Task** powered by an AWS CloudWatch.
+**Step 1** Schedule **BackOffice Task** powered by an AWS CloudWatch.
 
 **Step 2** Data collection from the table **stg_products**.
 1. Invoke **Core Task**.
@@ -30,11 +30,11 @@ Periodically, the middle tier(DataWald) retrieves the data from the staging tabl
 3. Collect data from the table **stg_products**.
 4. Push data to **DataWald API**.  
 
-**Step 3** Dispatch **BackOffice Task** with an AWS SQS.
+**Step 3** Dispatch **Frontend Task** with an AWS SQS.
 1. Place data to an AWS SQS queue.
-2. Dispatch **BackOffice Task**.
+2. Dispatch **Frontend Task**.
 
-**Step 4** Data synchronization to ERP(NetSuite) by **BackOffice Task**.
+**Step 4** Data synchronization to ERP(NetSuite) by **Frontend Task**.
 1. Retrieve data from the an AWS SQS queue.
 2. Invoke **Core Task**.
 3. Invoke **MicroCore NS Task**.
