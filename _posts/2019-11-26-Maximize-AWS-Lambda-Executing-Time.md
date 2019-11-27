@@ -85,3 +85,6 @@ def handler(event, context):
 			)
 			break
 ```
+
+### References
+[AWS Lambda Context Object in Python](https://docs.aws.amazon.com/lambda/latest/dg/python-context-object.html)
