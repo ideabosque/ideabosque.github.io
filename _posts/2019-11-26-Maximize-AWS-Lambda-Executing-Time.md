@@ -33,9 +33,9 @@ def getDataSet(**event):
 	for row in getRows():
 		total += 1
 		if offset == 0:
-            # Initiate the row.
-            ...
-            
+			# Initiate the row.
+			...
+			
 			rows.append(row)
 		if offset > 0:
 			offset -= 1
