@@ -6,7 +6,7 @@ summary: Utilize Google Sheets as PIM (Products Information Management) for Mage
 categories: Magento2 GoogleSheets
 ---
 
-Google Sheets is a great tool to collaborate with product management in a team. The following steps are to demonstrate how to perform the publishing of products from Google Sheets to Magento 2 with a Python script and Python modules.
+Google Sheets is a great tool to collaborate with product data management in a team. The following steps are to demonstrate how to perform the publishing of products from Google Sheets to Magento 2 with a Python script and Python modules.
 ### Create a sheet in Google Sheets with the following template. 
 
 sku | name | type_id | attribute_name_1 | attribute_name_2 | attribute_value_1 | attribute_value_2
