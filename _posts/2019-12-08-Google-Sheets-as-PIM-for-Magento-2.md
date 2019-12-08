@@ -15,7 +15,7 @@ abc-111 | XXXXXXXXXX | simple | description | color | XXXXXXXXXX | White
 
 * sku: Required for identity of each product.
 * attribute_name_{x}: An attribute code such as 'description', 'color'.
-* attribute_value_{x}: The valuse associated with attribute_name_{x}.
+* attribute_value_{x}: The value associated with attribute_name_{x}.
 * Rest of columns will be treated as attributes.
 
 ### Share the sheet and get the id and gid.
