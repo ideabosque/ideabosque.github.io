@@ -21,7 +21,7 @@ abc-111 | XXXXXXXXXX | simple | description | color | XXXXXXXXXX | White
 ### Share the sheet and get the id and gid.
 
 1. Make the sheet shared for everyone by a link.
-2. With the sheet url (https://docs.google.com/spreadsheets/d/{id}/edit#gid={gid}), you will be able to retrive the **id** and **gid**.
+2. With the sheet url (https://docs.google.com/spreadsheets/d/{id}/edit#gid={gid}), you will be able to retrieve the **id** and **gid**.
 
 ### Install the python modules.
 
