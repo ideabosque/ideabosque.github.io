@@ -182,7 +182,7 @@ class ProductsDataSync(object):
             }
             for k,v in row['data'].items():
                 if k.find('attribute') != -1:
-                    product['data'][v] = txFunct({'code': v, **row})
+                    product['data'][v] = txFunct({'code': v, **row['data']})
                 else:
                     product['data'][k] = v
             products.append(product)
