@@ -103,7 +103,8 @@ class ProductsDataSync(object):
         )
 
     def getRows(self, googleSheetId, gid, decode):
-        dataFeedUrl = "https://docs.google.com/spreadsheets/d/{id}/export?format=csv&id={id}&gid={gid}".format(
+        googleSheetUrl = """https://docs.google.com/spreadsheets/d/{id}/export?format=csv&id={id}&gid={gid}""""
+        dataFeedUrl = googleSheetUrl.format(
             id=googleSheetId,
             gid=gid
         )
