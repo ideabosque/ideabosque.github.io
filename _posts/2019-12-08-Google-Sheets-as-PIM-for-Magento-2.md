@@ -144,7 +144,7 @@ class ProductsDataSync(object):
                     (k, v) for k, v in product["data"].items() if v is not None
                 )
                 try:
-                    product['product_id'] = self.mage2Connector.syncProduct(sku, attributeSet, data, typeId, storeId)
+                    product['product_id'] = self.mage2Connector.syncProduct(sku, attributeSet, product["data"], typeId, storeId)
                     product['sync_status'] = 'S'
                 except Exception:
                     product['sync_status'] = 'F'
