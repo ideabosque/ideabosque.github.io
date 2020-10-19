@@ -23,14 +23,14 @@ The dropship integration system addresses the requirements and workflows between
 * Dropship Vendor(Backdffice): NetSuite
 * Middle Tier: DataWald Integration platform
     - Middle Tier API (DataWald API)
-        1. Core: Manage the configuration of each connection path and matedata of product data.
+        1. Core: Manage the configuration of each connection path and metadata of product data.
         2. Control: Control the cut date for the tasks, dispatch tasks and manage the processing status of the tasks.
         3. Frontend: Stage the data for the frontend data of each connection.
         4. Backend: Stage the data for the backend data of each connection.
     - Queue Tasks
         1. Core Task: The core dispatch engine to manage micro core tasks.
-        2. Micro Core B1 Task: A micro service to communicate with B1 with RESTfull API calls.
-        3. Micro Core BC/BundleB2B Task: A micro service to interact with BC with RESTfull API calls.
+        2. BackOffice Task: The BackOffice task to communicate with the backend application.
+        3. Frontend Task: The Frontend task to communicate with the Frontend application.
 
 ### User Case: Order synchronization(from the seller to the dropship vendor) 
 ![User Case: Order Sync](/images/2019-07-05_16-18-32.png)
