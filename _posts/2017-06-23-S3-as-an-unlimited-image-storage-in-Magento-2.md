@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: AWS S3 as an Unlimited Media Storage in Magento 2
 date: 2017-06-23 18:35
 summary: Using AWS S3 as an unlimited image storage in Magento 2.

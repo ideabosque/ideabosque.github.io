@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Purchase Order Automation With Vendors
 date: 2019-08-11 20:01
 summary: Purchase order automation built with NetSuite and S3 Bucket.

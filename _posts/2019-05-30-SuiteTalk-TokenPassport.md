@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: SuiteTalk TokenPassport
 date: 2019-05-30 19:22
 summary: How to implement SuiteTalk(NetSuite) TokenPassport.

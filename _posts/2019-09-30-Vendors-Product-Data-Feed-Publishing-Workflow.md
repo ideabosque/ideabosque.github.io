@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Vendors Product Data Feed Publishing Process
 date: 2019-09-30 16:02
 summary: Vendors Product Data Feed Publishing Process(Trading Product Data Service, Universal Product Data Feed).

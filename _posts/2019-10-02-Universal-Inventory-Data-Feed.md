@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Universal Inventory Feed
 date: 2019-10-02 09:51
 summary: Universal Inventory Feed.

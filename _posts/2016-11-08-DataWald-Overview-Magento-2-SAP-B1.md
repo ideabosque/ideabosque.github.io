@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: DataWald Overview (Magento 2 <--> SAP B1)
 date: 2016-11-08 18:05
 summary: DataWald Overview (Magento 2 <--> SAP B1).

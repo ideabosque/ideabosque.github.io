@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Tasks Management for Asynchronous Processes 
 date: 2019-08-21 12:30
 summary: Tasks Management for Asynchronous Processes.

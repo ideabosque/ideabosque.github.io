@@ -1,0 +1,36 @@
+main:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Solutions"
+    url: "/solutions/"
+    weight: 2
+  - name: "Services"
+    url: "/services/"
+    weight: 3
+  - name: "Team"
+    url: "/team/"
+    weight: 4
+  - name: "About"
+    url: "/about/"
+    weight: 5
+  - name: "Blog"
+    url: "/blog/"
+    weight: 6
+  - name: "Contact"
+    url: "/contact/"
+    weight: 7
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Solutions"
+    url: "/solutions/"
+    weight: 2
+  - name: "Blog"
+    url: "/blog/"
+    weight: 3
+  - name: "Contact"
+    url: "/contact/"
+    weight: 4

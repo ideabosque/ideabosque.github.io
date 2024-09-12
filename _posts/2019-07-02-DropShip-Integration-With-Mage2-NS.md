@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: DropShip Integration between Seller and Vendor
 date: 2019-07-02 16:17
 summary: DropShip integration built to bridge NetSuite(vendor) and Magento 2(seller).

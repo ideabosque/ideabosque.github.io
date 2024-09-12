@@ -1,0 +1,4 @@
+- name: "Team A"
+  order: 1
+- name: "Team B"
+  order: 2
