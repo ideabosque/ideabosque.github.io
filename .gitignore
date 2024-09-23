@@ -10,6 +10,7 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 **/Gemfile.lock
+vendor/*
 
 # Temporary files
 tmp
