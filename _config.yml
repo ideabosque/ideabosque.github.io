@@ -5,11 +5,11 @@ title: "Idea Bosque"
 # Logo configuration
 logo:
   mobile: "images/logo/logo.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
+  mobile_height: "48px"
+  mobile_width: "auto"
   desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "32px"
+  desktop_height: "48px"
+  desktop_width: "auto"
 
 # Home page configuration
 home: 

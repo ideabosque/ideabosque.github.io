@@ -1,33 +1,41 @@
 .main-menu {
   display: none;
+  height: 100%;
+
   @include media-breakpoint-up(md) {
     display: block;
   }
-  > ul {
+
+  >ul {
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    > li {
+
+    >li {
       list-style: none;
-      font-size: 1rem;
-      > a {
-        padding: 10px 12px 10px 12px;
+      font-size: 15px;
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      >a {
+        padding: 10px 16px 10px 16px;
         display: inline-block;
-        font-weight: normal;
+        font-weight: 600;
         text-decoration: none;
-        color: $primary;
+        color: #454545;
+
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
         }
       }
+
       &.active {
-        > a {
-          font-weight: bold;
-          text-decoration: none;
-          &:hover {
-            text-decoration: none;
-            transition: all 225ms ease-in 0s;
-          }
+
+        >a {
+          font-weight: 600;
+          color: $primary;
         }
       }
     }
