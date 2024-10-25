@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: SaaS App Multiple Versions Function Stack Routing Architecture
 date: 2019-08-21 11:06
 summary: SaaS App Multiple Versions Function Stack Routing Architecture.

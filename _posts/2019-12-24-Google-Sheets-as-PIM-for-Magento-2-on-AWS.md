@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Google Sheets as PIM for Magento 2 on AWS SAM
 date: 2019-12-24 21:17
 summary: The trade service (product data) for contractors, dealers, distributors, and manufacturers on AWS SAM.

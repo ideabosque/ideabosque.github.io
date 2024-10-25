@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Maximize AWS Lambda Executing Time
 date: 2019-11-26 13:43
 summary: Maximize AWS Lambda Executing Time.

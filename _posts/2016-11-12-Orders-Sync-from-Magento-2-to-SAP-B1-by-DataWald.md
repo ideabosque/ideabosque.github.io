@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Orders Sync from Magento 2 to SAP B1 by DataWald
 date: 2016-11-12 18:45
 summary: Orders Sync from Magento 2 to SAP B1 by DataWald.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: SAP B1 RESTful integrate with eCommerce
 date: 2016-10-28 19:45
 summary: How to use SAP B1 RESTful to integrate with eCommerce Platforms.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Google Sheets as PIM for Magento 2
 date: 2019-12-08 09:50
 summary: Utilize Google Sheets as PIM (Products Information Management) for Magento 2.

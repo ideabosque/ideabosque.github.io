@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Dynamic GraphQL Engine (SilvaEngine) with Routing Dispatch Layer
 date: 2020-04-22 12:23
 summary: Dynamic GraphQL Engine (SilvaEngine) with Routing Dispatch Layer.
