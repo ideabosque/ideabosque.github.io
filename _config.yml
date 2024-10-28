@@ -20,8 +20,8 @@ collections:
   services:
     output: true
     sort_by: weight
-  team:
-    output: true
+  # team:
+  #   output: true
   solutions:
     output: true
     sort_by: order  # Sorting solutions by order defined in markdown files
@@ -33,11 +33,11 @@ defaults:
       type: "services"
     values:
       layout: "service"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
+  # - scope:
+  #     path: ""
+  #     type: "team"
+  #   values:
+  #     layout: "team"
   - scope:
       path: ""
       type: "solutions"
@@ -64,3 +64,6 @@ exclude:
   - LICENSE.md
   - LICENSE
   - README.md
+  - team.md
+  - _team/
+  - data/features.json
