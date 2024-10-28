@@ -2,6 +2,8 @@
 // ==================================================
 @use "sass:math";
 
+$mtop: $hamburger-layer-height / -2;
+
 .hamburger {
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
@@ -57,7 +59,7 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: calc($hamburger-layer-height / -2);
+  margin-top: $mtop;
 
   &,
   &::before,
