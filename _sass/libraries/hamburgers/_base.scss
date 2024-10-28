@@ -57,7 +57,7 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -1.5px;
+  margin-top: calc($hamburger-layer-height / -2);
 
   &,
   &::before,
