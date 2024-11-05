@@ -14,4 +14,4 @@ DataWald is a powerful integration toolkit built atop SilvaEngine, offering seam
 - **Error Tracking and Re-synchronization**: Ensures data consistency even in case of transmission errors.
 - **Metadata Mapping**: Flexible metadata mapping between systems.
 
-[Explore DataWald on GitHub](https://github.com/ideabosque/silvaengine_aws)
+[Explore DataWald on GitHub](https://github.com/ideabosque/datawald_deployment)
