@@ -3,6 +3,6 @@ layout: solutions
 title: "Solutions"
 ---
 
-# Transformative Solutions for Complex Business Challenges
+# Strategic Solutions for Business Transformation
 
-We deliver transformative, next-generation solutions meticulously designed to overcome complex business challenges by harnessing the potential of scalable serverless architecture, intelligent AI-powered automation, and seamless system integrations that drive efficiency and innovation across the entire enterprise.
+We deliver next-gen solutions using serverless architecture, AI automation, and seamless integrations to drive enterprise efficiency and innovation.
