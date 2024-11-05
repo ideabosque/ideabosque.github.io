@@ -22,4 +22,4 @@ DataWald is a flexible integration framework powered by SilvaEngine, designed to
 
 - **CloudFormation Templates:** Provides AWS CloudFormation templates for streamlined deployment and management of AWS resources.
 
-For detailed information and deployment instructions, please refer to the [DataWald Deployment Repository](https://github.com/ideabosque/datawald_deployment). 
+For detailed information and deployment instructions, please refer to the [DataWald Deployment Repository](https://github.com/ideabosque/datawald_deployment).
