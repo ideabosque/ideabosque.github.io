@@ -1,32 +1,17 @@
 [
   {
     "name": "Github",
-    "link": "https://github.com/?q=ideabosque",
+    "link": "https://github.com/ideabosque",
     "image": "images/social/github.svg"
   },
   {
     "name": "Twitter",
-    "link": "https://twitter.com/zerostaticio",
+    "link": "https://x.com/ideabosquesp",
     "image": "images/social/twitter.svg"
   },
   {
-    "name": "Facebook",
-    "link": "https://facebook.com",
-    "image": "images/social/facebook.svg"
-  },
-  {
     "name": "Email",
-    "link": "mailto:ekyllserif@example.com ",
+    "link": "mailto:support@ideabosque.com",
     "image": "images/social/email.svg"
-  },
-  {
-    "name": "Instagram",
-    "link": "https://instagram.com",
-    "image": "images/social/instagram.svg"
-  },
-  {
-    "name": "Discord",
-    "link": "https://discord.com",
-    "image": "images/social/discord.svg"
   }
 ]
