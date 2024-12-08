@@ -8,6 +8,7 @@ title: "Contact Us"
 For inquiries, partnerships, or support, please use the form below or reach out to us directly at:
 
 - **Email**: support@ideabosque.com
+
 <!-- - **Phone**: +123 456 7890 -->
 
 <!-- <form action="https://formspree.io/f/your-email" method="POST" class="contact-form">
